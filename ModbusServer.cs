@@ -466,10 +466,8 @@ public class ModbusServer
     // ReSharper disable once MemberCanBePrivate.Global
     public InputRegisters InputRegistersInfo;
 
-    public ModbusServer(bool serialFlag, UdpClient udpClient)
+    public ModbusServer()
     {
-        SerialFlag = serialFlag;
-        _udpClient = udpClient;
         HoldingRegistersInfo = new HoldingRegisters(this);
         InputRegistersInfo = new InputRegisters(this);
         CoilsInfo = new Coils(this);
